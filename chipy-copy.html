@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Chipy Language Shootout</title>
+    <style>
+      .h1 { 
+        color: green;
+      }
+      .python-class {
+        border: 2px red solid;
+      }
+      #python-best {
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center"> 
+      <h1 id="html-header"
+        class="header-class">
+        HTML is the best!
+      </h1>    
+      <h2 id="python"
+          class="python-class">
+          Except for Python
+      </h2>
+      <p id="python-best"
+          class="python-class"
+          style="display: none;">
+          Python is the Best!
+      </p>
+      <button onclick="bestest()">
+        What Language is the best?
+      </button><br>
+      
+      <!-- more elements -->
+      <img src="/chipy.jpg" height="50"><br>
+      play video <br>
+      <video controls width="500">
+        <source src="evezor.mov" type="video/mp4" />
+      </video><br>
+      play audio <br>
+      <audio controls>
+        <source src="chipy.mp3" type="audio/mpeg">
+      </audio><br>
+      
+
+      <!-- more elements -->
+      create lists
+      <ul> 
+        <li>list element 1</li>
+        <li>list element 2</li>
+        <li>list element 3</li>
+      </ul>
+      <input type="text"> Text <br>
+      <input type="checkbox"> Checkbox <br>
+      <input type="date"> Date <br>
+      <input type="file"> File <br>
+      <input type="color"> Color <br>
+      <input type="radio"> radio1
+      <input type="radio"> radio2
+      <input type="radio"> radio3
+    </div>
+    <script>
+      function bestest() {
+        let best = document.getElementById('python-best');
+        best.style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
